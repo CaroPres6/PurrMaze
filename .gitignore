@@ -1,0 +1,85 @@
+# === Unity ===
+
+# Dossiers générés par Unity (ne jamais versionner)
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# Mémoire / cache de l'éditeur
+/[Mm]emoryCaptures/
+
+# Assets créés automatiquement par certains outils
+/[Aa]ssets/AssetStoreTools*
+
+# Cache de l'Asset Store
+/[Aa]ssets/Plugins/Editor/JetBrains*
+
+# Cache Visual Studio / Rider / VS Code
+.vs/
+.vscode/
+.idea/
+
+# Fichiers générés par les IDE (Unity les régénère)
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Fichiers de métadonnées de debug
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Builds
+*.apk
+*.aab
+*.unitypackage
+*.unitypackage.meta
+*.app
+
+# Crashlytics
+crashlytics-build.properties
+
+# Profiling
+/[Aa]ssets/[Ss]treamingAssets/aa.meta
+/[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Addressables (données de build)
+/[Aa]ssets/AddressableAssetsData/link.xml*
+/[Aa]ssets/AddressableAssetsData/*/*.bin*
+/[Aa]ssets/[Ss]treamingAssets/aa*
+
+# Gradle / Android
+*.gradle
+/[Aa]ssets/Plugins/Android/*.gradle
+
+# Fichiers OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.swp
+*~
+
+# Fichiers sensibles (clés de signature, etc.)
+*.keystore
+*.jks
+*.p12
+*.pem
+.env
