@@ -2286,6 +2286,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8791dab48b70d24aafcde5a98b1289e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  cameraCible: {fileID: 0}
+  suiviHorizontal: 0.85
+  suiviVertical: 0.9
+  vitesseAutomatique: {x: 0.01, y: 0}
 --- !u!1 &483058184
 GameObject:
   m_ObjectHideFlags: 0
@@ -2389,6 +2393,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8791dab48b70d24aafcde5a98b1289e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EffetParallaxe
+  cameraCible: {fileID: 0}
+  suiviHorizontal: 0.85
+  suiviVertical: 0.9
+  vitesseAutomatique: {x: 0.01, y: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2713,6 +2721,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8791dab48b70d24aafcde5a98b1289e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EffetParallaxe
+  cameraCible: {fileID: 0}
+  suiviHorizontal: 0.85
+  suiviVertical: 0.9
+  vitesseAutomatique: {x: 0.01, y: 0}
 --- !u!1 &1053070663
 GameObject:
   m_ObjectHideFlags: 0
@@ -2724,6 +2736,7 @@ GameObject:
   - component: {fileID: 1053070666}
   - component: {fileID: 1053070665}
   - component: {fileID: 1053070664}
+  - component: {fileID: 1053070667}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2826,6 +2839,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1053070667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053070663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b972d1c093e8f243a7a81e87b55c054, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  vitesse: 5
 --- !u!1 &1628506005
 GameObject:
   m_ObjectHideFlags: 0
