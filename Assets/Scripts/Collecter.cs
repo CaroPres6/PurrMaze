@@ -9,7 +9,7 @@ public class Collecter : MonoBehaviour
     {
         if (collectee || !collision.CompareTag("Player")) return;
         collectee = true;
-        GestionJeu.Instance.AjouterLait(valeur);
+        GestionJeu.Instance.AjouterBatterie(valeur);
         Destroy(gameObject);
     }
 }
