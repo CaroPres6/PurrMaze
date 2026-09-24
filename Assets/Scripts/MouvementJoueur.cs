@@ -1,5 +1,6 @@
 using UnityEngine;
-
+using UnityEngine.InputSystem;
+ 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Animator))]
 public class MouvementJoueur : MonoBehaviour
@@ -7,9 +8,9 @@ public class MouvementJoueur : MonoBehaviour
     [SerializeField] private float vitesse = 5f;
 
     private Rigidbody2D corps;
-    private Vector2 direction;
-
     private Animator animator;
+
+    private Vector2 direction;
 
     private void Awake()
     {
@@ -19,28 +20,61 @@ public class MouvementJoueur : MonoBehaviour
 
     private void Update()
     {
-        // TODO 1 : lire les axes Horizontal et Vertical.
-        float vertical = Input.GetAxisRaw("Vertical");
-        float horizontal = Input.GetAxisRaw("Horizontal");
+        LireClavier();
 
-        // TODO 2 : créer et normaliser le vecteur direction.
-        direction = new Vector2(horizontal, vertical).normalized;
+        // Informe l'Animator si le chat se déplace ou non.
+        animator.SetBool(
+            "EnMouvement",
+            direction.sqrMagnitude > 0.01f
+        );
     }
 
     private void FixedUpdate()
     {
-        // TODO 3 : déplacer le Rigidbody2D selon la direction et la vitesse.
-        corps.MovePosition(corps.position + direction * vitesse * Time.fixedDeltaTime);
-        animator.SetBool("EnMouvement", direction.sqrMagnitude > 0.01f);
+        corps.linearVelocity =
+            direction * vitesse;
     }
 
-    /*
-     * BANQUE DE LIGNES À REPLACER DANS LE BON ORDRE
-     *
-     * float vertical = Input.GetAxisRaw("Vertical");
-     * corps.MovePosition(corps.position + direction * vitesse * Time.fixedDeltaTime);
-     * direction = new Vector2(horizontal, vertical).normalized;
-     * float horizontal = Input.GetAxisRaw("Horizontal");
-     */
-}
+    private void LireClavier()
+    {
+        if (Keyboard.current == null)
+        {
+            direction = Vector2.zero;
+            return;
+        }
 
+        float horizontal = 0f;
+        float vertical = 0f;
+
+        // Gauche
+        if (Keyboard.current.leftArrowKey.isPressed ||
+            Keyboard.current.aKey.isPressed)
+        {
+            horizontal = -1f;
+        }
+
+        // Droite
+        if (Keyboard.current.rightArrowKey.isPressed ||
+            Keyboard.current.dKey.isPressed)
+        {
+            horizontal = 1f;
+        }
+
+        // Bas
+        if (Keyboard.current.downArrowKey.isPressed ||
+            Keyboard.current.sKey.isPressed)
+        {
+            vertical = -1f;
+        }
+
+        // Haut
+        if (Keyboard.current.upArrowKey.isPressed ||
+            Keyboard.current.wKey.isPressed)
+        {
+            vertical = 1f;
+        }
+
+        direction =
+            new Vector2(horizontal, vertical).normalized;
+    }
+}
