@@ -1,0 +1,923 @@
+fileFormatVersion: 2
+guid: c249f0cc0b58e554e968e9f85516bf9c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5978268582673014510
+    second: darkerTileset_0
+  - first:
+      213: 8840489921184169084
+    second: darkerTileset_1
+  - first:
+      213: 3056060124057022782
+    second: darkerTileset_2
+  - first:
+      213: -4197877451401215363
+    second: darkerTileset_3
+  - first:
+      213: -4746478133318015648
+    second: darkerTileset_4
+  - first:
+      213: -4942023434621041136
+    second: darkerTileset_5
+  - first:
+      213: -8484085864903155798
+    second: darkerTileset_6
+  - first:
+      213: 7480319106921449635
+    second: darkerTileset_7
+  - first:
+      213: -5835788577567595909
+    second: darkerTileset_8
+  - first:
+      213: -786412182570714138
+    second: darkerTileset_9
+  - first:
+      213: -6814698201708379310
+    second: darkerTileset_10
+  - first:
+      213: -3028800544622289978
+    second: darkerTileset_11
+  - first:
+      213: -8562891366964131
+    second: darkerTileset_12
+  - first:
+      213: 4443558768981987380
+    second: darkerTileset_13
+  - first:
+      213: 7122435567922933883
+    second: darkerTileset_14
+  - first:
+      213: 8195920368444468293
+    second: darkerTileset_15
+  - first:
+      213: -7333159535484324326
+    second: darkerTileset_16
+  - first:
+      213: 5201210061921649524
+    second: darkerTileset_17
+  - first:
+      213: -297042504008493707
+    second: darkerTileset_18
+  - first:
+      213: -1546156320014374696
+    second: darkerTileset_19
+  - first:
+      213: 2380119569718643499
+    second: darkerTileset_20
+  - first:
+      213: -5669046234095234200
+    second: darkerTileset_21
+  - first:
+      213: -1268444819344203917
+    second: darkerTileset_22
+  - first:
+      213: 4028336528647955945
+    second: darkerTileset_23
+  - first:
+      213: 9151159713953581938
+    second: darkerTileset_24
+  - first:
+      213: -2910297768449948356
+    second: darkerTileset_25
+  - first:
+      213: 1480596600179735757
+    second: darkerTileset_26
+  - first:
+      213: 7865725951181164833
+    second: darkerTileset_27
+  - first:
+      213: -4309396187296830395
+    second: darkerTileset_28
+  - first:
+      213: -5726216574673125422
+    second: darkerTileset_29
+  - first:
+      213: 6753441744377779914
+    second: darkerTileset_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: darkerTileset_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 783
+        width: 845
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 211a5e5f56ce80da0800000000000000
+      internalID: -5978268582673014510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 893
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7c7a909ebabfaa70800000000000000
+      internalID: 8840489921184169084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_2
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 546
+        width: 668
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e31b7aabd7e496a20800000000000000
+      internalID: 3056060124057022782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 571
+        width: 865
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d72cb9203b42eb5c0800000000000000
+      internalID: -4197877451401215363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_4
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 783
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065ab61294f112eb0800000000000000
+      internalID: -4746478133318015648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_5
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 780
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 016c1c3ced76a6bb0800000000000000
+      internalID: -4942023434621041136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 135
+        width: 887
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aafd8824bd8724a80800000000000000
+      internalID: -8484085864903155798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_7
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 567
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a8ce96689e6fc760800000000000000
+      internalID: 7480319106921449635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_8
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 567
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b722dc1453d130fa0800000000000000
+      internalID: -5835788577567595909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_9
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 523
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb35da594a1615f0800000000000000
+      internalID: -786412182570714138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_10
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 559
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 253cda367145d61a0800000000000000
+      internalID: -6814698201708379310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_11
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 567
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cb5742b3f987f5d0800000000000000
+      internalID: -3028800544622289978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_12
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 564
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5462dd781491eff0800000000000000
+      internalID: -8562891366964131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_13
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 15
+        width: 652
+        height: 537
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4305ebb4821baad30800000000000000
+      internalID: 4443558768981987380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_14
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 531
+        width: 37
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7077a9a969f7d260800000000000000
+      internalID: 7122435567922933883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_15
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 545
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54c6588b622cdb170800000000000000
+      internalID: 8195920368444468293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 199
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a16303651426b3a90800000000000000
+      internalID: -7333159535484324326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_17
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 167
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 473070f7ef86e2840800000000000000
+      internalID: 5201210061921649524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_18
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 163
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57591699a61b0ebf0800000000000000
+      internalID: -297042504008493707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_19
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 171
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d86152d403fa8ae0800000000000000
+      internalID: -1546156320014374696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_20
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 145
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2b09046322e70120800000000000000
+      internalID: 2380119569718643499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_21
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 167
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 863dc796c708351b0800000000000000
+      internalID: -5669046234095234200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_22
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 165
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37fddc54824956ee0800000000000000
+      internalID: -1268444819344203917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_23
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 159
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e5aac1dab687e730800000000000000
+      internalID: 4028336528647955945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_24
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 145
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27b811166437ffe70800000000000000
+      internalID: 9151159713953581938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_25
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 151
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c35cde8599b8c97d0800000000000000
+      internalID: -2910297768449948356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_26
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 0
+        width: 287
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc3d5963c22c8410800000000000000
+      internalID: 1480596600179735757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_27
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 123
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12199b4041ca82d60800000000000000
+      internalID: 7865725951181164833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_28
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 0
+        width: 367
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54cefb3fff2f134c0800000000000000
+      internalID: -4309396187296830395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_29
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 95
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df77a73d546880b0800000000000000
+      internalID: -5726216574673125422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkerTileset_30
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 25
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac69ee83c7b09bd50800000000000000
+      internalID: 6753441744377779914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      darkerTileset_0: -5978268582673014510
+      darkerTileset_1: 8840489921184169084
+      darkerTileset_10: -6814698201708379310
+      darkerTileset_11: -3028800544622289978
+      darkerTileset_12: -8562891366964131
+      darkerTileset_13: 4443558768981987380
+      darkerTileset_14: 7122435567922933883
+      darkerTileset_15: 8195920368444468293
+      darkerTileset_16: -7333159535484324326
+      darkerTileset_17: 5201210061921649524
+      darkerTileset_18: -297042504008493707
+      darkerTileset_19: -1546156320014374696
+      darkerTileset_2: 3056060124057022782
+      darkerTileset_20: 2380119569718643499
+      darkerTileset_21: -5669046234095234200
+      darkerTileset_22: -1268444819344203917
+      darkerTileset_23: 4028336528647955945
+      darkerTileset_24: 9151159713953581938
+      darkerTileset_25: -2910297768449948356
+      darkerTileset_26: 1480596600179735757
+      darkerTileset_27: 7865725951181164833
+      darkerTileset_28: -4309396187296830395
+      darkerTileset_29: -5726216574673125422
+      darkerTileset_3: -4197877451401215363
+      darkerTileset_30: 6753441744377779914
+      darkerTileset_4: -4746478133318015648
+      darkerTileset_5: -4942023434621041136
+      darkerTileset_6: -8484085864903155798
+      darkerTileset_7: 7480319106921449635
+      darkerTileset_8: -5835788577567595909
+      darkerTileset_9: -786412182570714138
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
