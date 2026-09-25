@@ -8,11 +8,11 @@ public class GestionJeu : MonoBehaviour
     public static GestionJeu Instance { get; private set; }
 
     [Header("Progression")]
-    [SerializeField] private int objectifBatteries = 3;
+    [SerializeField] private int objectifLaits = 3;
     [SerializeField] private int viesInitiales = 3;
 
     [Header("Interface")]
-    [SerializeField] private TMP_Text texteBatteries;
+    [SerializeField] private TMP_Text texteLaits;
     [SerializeField] private TMP_Text texteVies;
     [SerializeField] private Image barreProgression;
     [SerializeField] private GameObject panneauVictoire;
@@ -23,12 +23,12 @@ public class GestionJeu : MonoBehaviour
     [SerializeField] private MouvementJoueur joueur;
     //[SerializeField] private AudioJeu audioJeu;
 
-    private int batteriesCollectees;
+    private int laitsCollectes;
     private int vies;
     private bool partieTerminee;
 
     public bool PartieTerminee => partieTerminee;
-    public bool ObjectifAtteint => batteriesCollectees >= objectifBatteries;
+    public bool ObjectifAtteint => laitsCollectes >= objectifLaits;
 
     [SerializeField] private EffetDegatsJoueur effetDegatsJoueur;
 
@@ -45,7 +45,7 @@ public class GestionJeu : MonoBehaviour
     private void Start()
     {
         vies = viesInitiales;
-        batteriesCollectees = 0;
+        laitsCollectes = 0;
         partieTerminee = false;
         panneauVictoire.SetActive(false);
         panneauDefaite.SetActive(false);
@@ -57,7 +57,7 @@ public class GestionJeu : MonoBehaviour
     public void AjouterBatterie(int valeur = 1)
     {
         if (partieTerminee) return;
-        batteriesCollectees += valeur;
+        laitsCollectes += valeur;
         //audioJeu?.JouerCollecte();
         ActualiserInterface();
         if (ObjectifAtteint)
@@ -106,11 +106,11 @@ public class GestionJeu : MonoBehaviour
 
     private void ActualiserInterface()
     {
-        texteBatteries.text = $"Batteries : {batteriesCollectees}/{objectifBatteries}";
+        texteLaits.text = $"Laits : {laitsCollectes}/{objectifLaits}";
         texteVies.text = $"Vies : {vies}";
         if (barreProgression != null)
-            barreProgression.fillAmount = objectifBatteries > 0
-                ? (float)batteriesCollectees / objectifBatteries
+            barreProgression.fillAmount = objectifLaits > 0
+                ? (float)laitsCollectes / objectifLaits
                 : 0f;
     }
 
