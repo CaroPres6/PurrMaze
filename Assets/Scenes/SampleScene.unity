@@ -1277,7 +1277,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   objectifLaits: 5
   viesInitiales: 3
-  texteLaits: {fileID: 0}
+  texteLaits: {fileID: 2133602896}
   texteVies: {fileID: 320786552}
   barreProgression: {fileID: 0}
   panneauVictoire: {fileID: 920043621}
@@ -6460,7 +6460,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -7489,10 +7489,10 @@ Tilemap:
   m_TileSpriteArray:
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: 21300000, guid: 1d1701abaa88efc40bdbf16025fb6d10, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 1d1701abaa88efc40bdbf16025fb6d10, type: 3}
   - m_RefCount: 273
     m_Data: {fileID: 21300000, guid: 126f833528a50074eb2c89fce562fb0e, type: 3}
   m_TileMatrixArray:

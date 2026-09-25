@@ -54,7 +54,7 @@ public class GestionJeu : MonoBehaviour
         //audioJeu?.JouerLancement();
     }
 
-    public void AjouterBatterie(int valeur = 1)
+    public void AjouterLait(int valeur = 1)
     {
         if (partieTerminee) return;
         laitsCollectes += valeur;
