@@ -31,7 +31,7 @@ public class EnnemiMobile : MonoBehaviour
     private Transform ciblePatrouille;
     private float prochainDegat;
     private float progressionVague;
-    private EffetAttaqueEnnemi effetAttaque;
+    //private EffetAttaqueEnnemi effetAttaque;
 
     private void Awake()
     {
@@ -39,7 +39,7 @@ public class EnnemiMobile : MonoBehaviour
         rendu = GetComponent<SpriteRenderer>();
         corps.gravityScale = 0f;
         corps.freezeRotation = true;
-        effetAttaque = GetComponent<EffetAttaqueEnnemi>();
+        //effetAttaque = GetComponent<EffetAttaqueEnnemi>();
     }
 
     private void Start()
@@ -102,7 +102,7 @@ public class EnnemiMobile : MonoBehaviour
     {
         if (!autre.CompareTag("Player") || Time.time < prochainDegat) return;
         prochainDegat = Time.time + delaiEntreDegats;
-        effetAttaque?.Declencher();
+        //effetAttaque?.Declencher();
         if (Camera.main != null)
             Camera.main.GetComponent<SecousseCamera>()?.Declencher();
         GestionJeu.Instance?.PerdreVie();
