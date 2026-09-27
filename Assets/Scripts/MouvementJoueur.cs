@@ -74,6 +74,16 @@ public class MouvementJoueur : MonoBehaviour
             vertical = 1f;
         }
 
+        // Flip du personnage
+        if (horizontal > 0)
+        {
+            transform.localScale = new Vector3(-3, 3, 1);
+        }
+        else if (horizontal < 0)
+        {
+            transform.localScale = new Vector3(3, 3, 1);
+        }
+
         direction =
             new Vector2(horizontal, vertical).normalized;
     }
