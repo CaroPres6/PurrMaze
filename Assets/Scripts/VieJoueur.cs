@@ -84,8 +84,6 @@ public class VieJoueur : MonoBehaviour
     {
         estMort = true;
 
-        if (animator != null) animator.SetTrigger("Mort");
-
         if (mouvement != null) mouvement.enabled = false;
         if (attaque != null) attaque.enabled = false;
         if (corps != null) corps.linearVelocity = Vector2.zero;

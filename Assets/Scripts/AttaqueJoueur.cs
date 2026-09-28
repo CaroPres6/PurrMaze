@@ -59,16 +59,12 @@ public class AttaqueJoueur : MonoBehaviour
         Vector2 centre = CentreAttaque();
 
         Collider2D[] touches = Physics2D.OverlapCircleAll(centre, rayonAttaque);
-        Debug.Log($"Colliders touchés : {touches.Length}");
 
         foreach (Collider2D objet in touches)
         {
-            Debug.Log($"Touché : {objet.name} | tag : {objet.tag}");
-
             if (!objet.CompareTag("Ennemi")) continue;
 
             VieEnnemi vie = objet.GetComponentInParent<VieEnnemi>();
-            Debug.Log($"VieEnnemi trouvé : {vie != null}");
 
             if (vie != null)
             {

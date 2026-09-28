@@ -85,12 +85,25 @@ public class GestionJeu : MonoBehaviour
             DeclencherDefaite();
     }
 
+    private void BloquerJoueur()
+    {
+        if (joueur == null) return;
+
+        joueur.enabled = false;
+
+        AttaqueJoueur attaque = joueur.GetComponent<AttaqueJoueur>();
+        if (attaque != null) attaque.enabled = false;
+
+        Rigidbody2D corps = joueur.GetComponent<Rigidbody2D>();
+        if (corps != null) corps.linearVelocity = Vector2.zero;
+    }
+
     public void DeclencherVictoire()
     {
         if (partieTerminee || !ObjectifAtteint) return;
         partieTerminee = true;
         panneauVictoire.SetActive(true);
-        //joueur.DesactiverCommandes();
+        BloquerJoueur();
         //audioJeu?.JouerVictoire();
     }
 
@@ -99,7 +112,7 @@ public class GestionJeu : MonoBehaviour
         if (partieTerminee) return;
         partieTerminee = true;
         panneauDefaite.SetActive(true);
-        //joueur.DesactiverCommandes();
+        BloquerJoueur();
         //audioJeu?.JouerDefaite();
     }
 

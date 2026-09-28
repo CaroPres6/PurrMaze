@@ -21,7 +21,6 @@ public class VieEnnemi : MonoBehaviour
     public void SubirDegats(int degats)
     {
         if (EstMort) return;
-        Debug.Log($"{name} perd {degats} PV, reste {currentVie - degats}");
         currentVie = Mathf.Max(0, currentVie - degats);
         OnDegatsSubis?.Invoke(currentVie);
 
