@@ -25,9 +25,9 @@ public class GestionJeu : MonoBehaviour
     //[SerializeField] private AudioJeu audioJeu;
 
     private int laitsCollectes;
-    private int vies;
     private bool partieTerminee;
 
+    public int vies;
     public bool PartieTerminee => partieTerminee;
     public bool ObjectifAtteint => laitsCollectes >= objectifLaits;
 

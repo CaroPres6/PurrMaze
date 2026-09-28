@@ -84,7 +84,6 @@ public class MouvementJoueur : MonoBehaviour
             transform.localScale = new Vector3(3, 3, 1);
         }
 
-        direction =
-            new Vector2(horizontal, vertical).normalized;
+        direction = new Vector2(horizontal, vertical).normalized;
     }
 }

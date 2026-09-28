@@ -57,11 +57,11 @@ public class AttaqueJoueur : MonoBehaviour
 
         foreach (Collider2D objet in touches)
         {
-            SanteEntite sante = objet.GetComponentInParent<SanteEntite>();
-            if (sante != null)
-            {
-                sante.SubirDegats(degatsAttaque);
-            }
+            //SanteEntite sante = objet.GetComponentInParent<SanteEntite>();
+            //if (sante != null)
+            //{
+            //    sante.SubirDegats(degatsAttaque);
+            //}
         }
     }
 
