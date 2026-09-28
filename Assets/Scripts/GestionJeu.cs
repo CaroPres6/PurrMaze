@@ -14,6 +14,7 @@ public class GestionJeu : MonoBehaviour
     [Header("Interface")]
     [SerializeField] private TMP_Text texteLaits;
     [SerializeField] private TMP_Text texteVies;
+    [SerializeField] private Image[] imagesVies;
     [SerializeField] private Image barreProgression;
     [SerializeField] private GameObject panneauVictoire;
     [SerializeField] private GameObject panneauDefaite;
@@ -107,7 +108,16 @@ public class GestionJeu : MonoBehaviour
     private void ActualiserInterface()
     {
         texteLaits.text = $"Laits : {laitsCollectes}/{objectifLaits}";
-        texteVies.text = $"Vies : {vies}";
+
+        if (texteVies != null)
+            texteVies.text = $"Vies : {vies}";
+
+        for (int i = 0; i < imagesVies.Length; i++)
+        {
+            if (imagesVies[i] != null)
+                imagesVies[i].gameObject.SetActive(i < vies);
+        }
+
         if (barreProgression != null)
             barreProgression.fillAmount = objectifLaits > 0
                 ? (float)laitsCollectes / objectifLaits
