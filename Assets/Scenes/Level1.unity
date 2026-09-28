@@ -1279,11 +1279,13 @@ MonoBehaviour:
   viesInitiales: 3
   texteLaits: {fileID: 2133602896}
   texteVies: {fileID: 320786552}
+  imagesVies: []
   barreProgression: {fileID: 0}
   panneauVictoire: {fileID: 920043621}
   panneauDefaite: {fileID: 1964243110}
   porteSortie: {fileID: 1464355566}
   joueur: {fileID: 1053070667}
+  vies: 0
   effetDegatsJoueur: {fileID: 0}
 --- !u!4 &40724792
 Transform:
@@ -2736,7 +2738,8 @@ GameObject:
   - component: {fileID: 142579660}
   - component: {fileID: 142579659}
   - component: {fileID: 142579661}
-  m_Layer: 0
+  - component: {fileID: 142579662}
+  m_Layer: 3
   m_Name: Dog2
   m_TagString: Ennemi
   m_Icon: {fileID: 0}
@@ -2752,7 +2755,7 @@ Transform:
   m_GameObject: {fileID: 142579655}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.55, y: 6.5, z: 0}
+  m_LocalPosition: {x: 8.55, y: -2.42, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2925,6 +2928,25 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &142579662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142579655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47ad03e63fb3aa840a8199fa7235828e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VieEnnemi
+  vieMax: 20
+  OnDegatsSubis:
+    m_PersistentCalls:
+      m_Calls: []
+  OnMort:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &175079009
 GameObject:
   m_ObjectHideFlags: 0
@@ -3865,7 +3887,8 @@ GameObject:
   - component: {fileID: 521496676}
   - component: {fileID: 521496675}
   - component: {fileID: 521496677}
-  m_Layer: 0
+  - component: {fileID: 521496678}
+  m_Layer: 3
   m_Name: Dog1
   m_TagString: Ennemi
   m_Icon: {fileID: 0}
@@ -4054,6 +4077,25 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &521496678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521496671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47ad03e63fb3aa840a8199fa7235828e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  vieMax: 20
+  OnDegatsSubis:
+    m_PersistentCalls:
+      m_Calls: []
+  OnMort:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -4852,6 +4894,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 920043621}
   m_CullTransparentMesh: 1
+--- !u!1 &929604761
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 929604762}
+  m_Layer: 0
+  m_Name: PointAttaque
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &929604762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929604761}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.223, y: 0.106, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1053070666}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &935275967
 GameObject:
   m_ObjectHideFlags: 0
@@ -5106,6 +5179,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 519420032}
+  - {fileID: 929604762}
   m_Father: {fileID: 1987205019}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1053070667
@@ -5216,8 +5290,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VieJoueur
   vieMax: 100
-  currentVie: 100
   sliderVie: {fileID: 1994843853}
+  coucheZoneInterdite:
+    serializedVersion: 2
+    m_Bits: 0
+  pointRespawn: {fileID: 1478964704}
+  delaiRespawn: 1.5
 --- !u!114 &1053070672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5230,6 +5308,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18fffb2377d839844b9efff55c800880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  decalageAttaque: {x: 1, y: 0}
+  rayonAttaque: 1
+  degatsAttaque: 20
+  vitesseAttaque: 0.3
 --- !u!1 &1438188592
 GameObject:
   m_ObjectHideFlags: 0
@@ -5565,7 +5647,7 @@ Transform:
   m_GameObject: {fileID: 1577323217}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: -1.68, z: 0}
+  m_LocalPosition: {x: 1.96, y: -3.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5961,7 +6043,7 @@ Transform:
   m_GameObject: {fileID: 1929740703}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: -0.05, z: 0}
+  m_LocalPosition: {x: -0.01, y: -3.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

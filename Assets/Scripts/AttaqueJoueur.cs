@@ -4,9 +4,8 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Animator))]
 public class AttaqueJoueur : MonoBehaviour
 {
-    [SerializeField] private Transform pointAttaque;
+    [SerializeField] private Vector2 decalageAttaque = new Vector2(1f, 0f);
     [SerializeField] private float rayonAttaque = 0.5f;
-    [SerializeField] private LayerMask coucheEnnemis;
     [SerializeField] private int degatsAttaque = 20;
     [SerializeField] private float vitesseAttaque = 0.5f;
 
@@ -41,6 +40,14 @@ public class AttaqueJoueur : MonoBehaviour
         }
     }
 
+    private Vector2 CentreAttaque()
+    {
+        float direction = transform.localScale.x < 0 ? 1f : -1f;
+
+        return (Vector2)transform.position +
+               new Vector2(decalageAttaque.x * direction, decalageAttaque.y);
+    }
+
     private void Attaquer()
     {
         animator.SetTrigger("Attaque");
@@ -49,26 +56,30 @@ public class AttaqueJoueur : MonoBehaviour
 
     public void AppliquerDegats()
     {
-        Vector2 centre = pointAttaque != null
-            ? (Vector2)pointAttaque.position
-            : (Vector2)transform.position;
+        Vector2 centre = CentreAttaque();
 
-        Collider2D[] touches = Physics2D.OverlapCircleAll(centre, rayonAttaque, coucheEnnemis);
+        Collider2D[] touches = Physics2D.OverlapCircleAll(centre, rayonAttaque);
+        Debug.Log($"Colliders touchés : {touches.Length}");
 
         foreach (Collider2D objet in touches)
         {
-            //SanteEntite sante = objet.GetComponentInParent<SanteEntite>();
-            //if (sante != null)
-            //{
-            //    sante.SubirDegats(degatsAttaque);
-            //}
+            Debug.Log($"Touché : {objet.name} | tag : {objet.tag}");
+
+            if (!objet.CompareTag("Ennemi")) continue;
+
+            VieEnnemi vie = objet.GetComponentInParent<VieEnnemi>();
+            Debug.Log($"VieEnnemi trouvé : {vie != null}");
+
+            if (vie != null)
+            {
+                vie.SubirDegats(degatsAttaque);
+            }
         }
     }
 
     private void OnDrawGizmosSelected()
     {
-        Vector3 centre = pointAttaque != null ? pointAttaque.position : transform.position;
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(centre, rayonAttaque);
+        Gizmos.DrawWireSphere(CentreAttaque(), rayonAttaque);
     }
 }
