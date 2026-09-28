@@ -6365,7 +6365,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5.65
+  orthographic size: 6.27
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -6409,9 +6409,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   cible: {fileID: 1053070666}
+  secousse: {fileID: 0}
   vitesseSuivi: 5
-  limiteMin: {x: -8.54, y: -0.84}
-  limiteMax: {x: 11.07, y: 5.82}
+  limiteMin: {x: -8, y: -6}
+  limiteMax: {x: 20, y: 10}
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7977,7 +7978,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
@@ -8013,9 +8014,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VieJoueur
   vieMax: 100
   sliderVie: {fileID: 1994843853}
-  coucheZoneInterdite:
-    serializedVersion: 2
-    m_Bits: 0
   pointRespawn: {fileID: 1478964704}
   delaiRespawn: 1.5
 --- !u!114 &1053070672

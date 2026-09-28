@@ -6,7 +6,6 @@ public class VieJoueur : MonoBehaviour
 {
     [SerializeField] private int vieMax = 100;
     [SerializeField] private Slider sliderVie;
-    [SerializeField] private LayerMask coucheZoneInterdite;
     [SerializeField] private Transform pointRespawn; 
     [SerializeField] private float delaiRespawn = 1.5f;
 
